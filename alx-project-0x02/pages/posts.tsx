@@ -36,4 +36,10 @@ const Posts: React.FC = () => {
   );
 };
 
+export async function getStaticProps() {
+  return {
+    props: [],
+  };
+}
+
 export default Posts;
