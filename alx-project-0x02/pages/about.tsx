@@ -1,9 +1,11 @@
 import React from "react";
 import Button from "@/components/common/Button";
+import Header from "@/components/layout/Header";
 
 const About: React.FC = () => {
   return (
-    <div className="p-10 space-y-4">
+    <div className="space-y-4">
+      <Header />
       <h1 className="text-2xl font-semi-bold mb-4">About Page</h1>
 
       <div className=" flex flex-col space-y-3 w-2xs">

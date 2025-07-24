@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "@/components/common/Card";
 import { CardProps, PostData } from "@/interfaces";
 import PostModal from "@/components/common/PostModal";
+import Header from "@/components/layout/Header";
 
 const Home: React.FC = () => {
   const [posts, setPost] = useState<PostData[]>([]);
@@ -12,8 +13,9 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="p-6 max-w-2xl mx-auto">
-      <div className="flex justify-between items-center mb-6">
+    <div className="mx-auto space-y-4">
+      <Header />
+      <div className="flex justify-between p-6 items-center mb-6">
         <h1 className="text-2xl font-semibold">Home Page</h1>
         <button
           type="button"
@@ -32,7 +34,7 @@ const Home: React.FC = () => {
       />
 
       {posts.length === 0 ? (
-        <p className="text-red-500 font-semibold text-2xl">No posts yet.</p>
+        <p className="text-red-500 font-semibold text-2xl p-6">No posts yet.</p>
       ) : (
         <div className="space-y-4">
           {posts.map(({ title, content }: CardProps, key: number) => (
