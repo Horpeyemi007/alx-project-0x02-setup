@@ -24,3 +24,19 @@ export interface ButtonProps {
   className?: string;
   type?: "button" | "submit" | "reset";
 }
+
+export interface PostProps {
+  title: string;
+  content: string;
+  userId: number;
+  [key: string]: string | number;
+}
+
+export interface UserProps {
+  name: string;
+  email: string;
+  address: {
+    street: string;
+    city: string;
+  };
+}
