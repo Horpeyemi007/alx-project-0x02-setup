@@ -37,6 +37,7 @@ const Posts: React.FC = () => {
 };
 
 export async function getStaticProps() {
+  // await
   return {
     props: [],
   };
