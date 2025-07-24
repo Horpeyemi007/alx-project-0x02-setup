@@ -36,11 +36,11 @@ const Posts: React.FC = () => {
   );
 };
 
-export async function getStaticProps() {
-  // await
-  return {
-    data: [],
-  };
-}
+// export async function getStaticProps() {
+//   // await
+//   return {
+//     data: [],
+//   };
+// }
 
 export default Posts;
